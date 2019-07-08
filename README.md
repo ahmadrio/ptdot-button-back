@@ -18,7 +18,7 @@ public function tools()
 Tambahkan jg di file app/Nova/Resource.php
 
 ```
-use Opanegro\PtdotButtonBack\Traits;
+use Opanegro\PtdotButtonBack\Traits\Breadcrumbs;
 
 abstract class Resource extends NovaResource
 {

@@ -1,0 +1,81 @@
+.button-back-and-breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-back-and-breadcrumbs .breadcrumb-item a {
+  color: var(--primary);
+}
+
+.button-back-and-breadcrumbs .breadcrumb-item a:after {
+  content: ">";
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--black);
+}
+
+.button-back-and-breadcrumbs .breadcrumb-item:first-of-type a {
+  margin-left: 15px;
+}
+
+.button-back-and-breadcrumbs .breadcrumb-item:last-of-type a,
+.button-back-and-breadcrumbs .breadcrumb-item .router-link-exact-active a {
+  color: var(--black);
+  cursor: default;
+}
+
+.button-back-and-breadcrumbs .breadcrumb-item:last-of-type a:after,
+.button-back-and-breadcrumbs .breadcrumb-item .router-link-exact-active a:after {
+  content: '';
+}
+
+.button-back-and-breadcrumbs .button-back-item {
+  padding-top: 5px;
+}
+
+.button-back-and-breadcrumbs .button-back-item,
+.button-back-and-breadcrumbs .breadcrumb-item {
+  display: inline-block;
+  position: relative;
+}
+
+.button-back-and-breadcrumbs .button-back-item a,
+.button-back-and-breadcrumbs .button-back-item button,
+.button-back-and-breadcrumbs .breadcrumb-item a,
+.button-back-and-breadcrumbs .breadcrumb-item button {
+  margin-right: 15px;
+  margin-left: 8px;
+  text-decoration: none;
+  font-weight: normal !important;
+}
+
+.button-back-and-breadcrumbs .button-back-item a svg,
+.button-back-and-breadcrumbs .button-back-item button svg,
+.button-back-and-breadcrumbs .breadcrumb-item a svg,
+.button-back-and-breadcrumbs .breadcrumb-item button svg {
+  width: 15px;
+}
+
+.button-back-and-breadcrumbs .button-back-item:first-of-type a,
+.button-back-and-breadcrumbs .button-back-item:first-of-type button,
+.button-back-and-breadcrumbs .breadcrumb-item:first-of-type a,
+.button-back-and-breadcrumbs .breadcrumb-item:first-of-type button {
+  margin-left: 0;
+}
+

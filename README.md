@@ -5,13 +5,14 @@ Install:
 
 Tambah code di app/NovaServiceProvider.php:
 ```
-use Opanegro\PtdotButtonBack;
+use Opanegro\PtdotButtonBack\PtdotButtonBack;
 
 public function tools()
 {
-    ...
-    
-    PtdotButtonBack::make(),
+    return [
+        ...
+        PtdotButtonBack::make(),
+    ];
 }
 ```
 

@@ -1,4 +1,8 @@
-### Laravel nova breadcrumb with button back
+# Laravel nova breadcrumb with button back
+
+Required:
+- Laravel v5.7+
+- Laravel Nova v2
 
 Install:
 `composer require opanegro/ptdot-button-back`

@@ -24,6 +24,8 @@
 </template>
 
 <script>
+    import unslug from 'unslug';
+
     export default {
 
         props: [
@@ -71,7 +73,7 @@
                     let pathQueries = {
                         path: this.viaResource,
                         to: '/resources/' + this.viaResource + '/' + this.viaResourceId,
-                        text: this.viaResource.charAt(0).toUpperCase() + this.viaResource.slice(1) + ' Detail',
+                        text: unslug(this.viaResource) + ' Detail',
                     };
                     console.log(pathQueries);
                     if (pathQueries.path !== '')
